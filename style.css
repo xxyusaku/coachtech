@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+}
+
+#eyecatch {
+  height: 600px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#eyecatch p {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-size: 50px;
+  font-style: inherit;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.eyecatch-bottom {
+  position: absolute;
+  background: #f2f2f2;
+  width: 830px;
+  color: #000;
+  bottom: 0px;
+  left: 50%;
+}
+
+.eyecatch-bottom span {
+  position: relative;
+  left: 700px;
+  background-color: #000;
+  color: #f2f2f2;
+  align-items: center;
+  margin-bottom: 500px;
+}
+
+#mission {
+  background: #000;
+  height: 600px;
+}
+
+.mission-right h2,
+/* .mission-logo p, */
+.mission-right a {
+  align-items: center;
+  padding: 70px;
+  padding-left: 300px;
+  color: #f2f2f2;
+  width: 58%;
+}
+
+.mission-right p {
+  color: #f2f2f2;
+  width: 58%;
+  padding-left: 300px;
+}
+
+.mission-right h2 {
+  font-size: 25px;
+  color: #f2f2f2;
+  position: relative;
+}
+
+.mission-right a {
+  padding: 10px 10px;
+  font-size: 14px;
+  color: #000;
+  background: #f2f2f2;
+  border: 1px  #000 solid;
+  transition: 0.4s ease;
+  position: relative;
+  display: block;
+  margin-left: 300px;
+}
+
+.mission-right a:hover {
+  color: #f2f2f2;
+  background: #000;
+  border: 1px #f2f2f2 solid;
+}
+
+.mission-right img {
+  position: absolute;
+  width: 40%;
+  left: 900px;
+  margin-bottom: 40px;
+}
+
+#service {
+  background: #cccccc;
+  height: 2000px;
+  margin-top: 150px;
+}
+
+#service img {
+  position: relative;
+  width: 850px;
+  height: 600px;
+  left: 50%;
+  top: -200px;
+}
+
+#service .section-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  padding: 30px;
+  margin: 0;
+}
+
+.card {
+  width: 60%;
+  padding: 50px 20px 50px;
+  color: #000;
+  border: 1px solid #f2f2f2;
+  background: #f2f2f2;
+  margin-right: 50px;
+  position: relative;
+}
+
+.title,
+.sub-title,
+.text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.text {
+  padding: 10px 0;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #000;
+}
